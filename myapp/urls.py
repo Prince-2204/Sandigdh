@@ -4,7 +4,7 @@ from .views import *
 from . import views
 
 urlpatterns = [
-    
+    path('',views.new,name="new"),
     # 'upload-screenshot/' API is to upload the screenshot in the database
     path('upload-screenshot/', UploadScreenshot.as_view(), name='upload_screenshot'),
     #   'fetch-url/' is to  
