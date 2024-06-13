@@ -53,7 +53,8 @@ from django.urls import path
 
 # ******************Function and classes for sending and receiving data from extension**************
     
-
+def new(request):
+    return HttpResponse("Hello welcome! :)")
 class SendStringdiscountAPIView(APIView):
     def get(self, request, format=None):
 
